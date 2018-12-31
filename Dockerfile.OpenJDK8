@@ -1,0 +1,4 @@
+FROM openjdk:8-jdk-stretch
+
+ADD imulab.io.crt /usr/local/share/ca-certificates/imulab.io.crt
+RUN update-ca-certificates
